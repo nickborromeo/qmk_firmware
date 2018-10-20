@@ -135,7 +135,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LALT(LGUI(KC_F)),          KC_MUTE,                    KC_VOLD, KC_VOLU, _______, _______, _______, KC_7,  KC_8,    KC_9,    KC_PMNS,  KC_BSPC,
     LALT(LCTL(LGUI(KC_LEFT))), LALT(LCTL(LGUI(KC_RIGHT))), _______, _______, _______, _______, _______, KC_4,  KC_5,    KC_6,    KC_PPLS,  _______,
     _______,                   _______,                    _______, _______, _______, _______, _______, KC_1,  KC_2,    KC_3,    KC_PAST,  KC_ENT,
-    _______,                   _______,                    _______, _______, _______, KC_SPC,  KC_SPC,  KC_0,  _______, _______, KC_PSLS,  _______,
+    _______,                   _______,                    _______, _______, _______, KC_SPC,  KC_SPC,  KC_0,  _______, _______, KC_PSLS,  _______
 ),
 
 /* Plover layer (http://opensteno.org)

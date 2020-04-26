@@ -65,11 +65,11 @@ MO(2),             LALT(LGUI(KC_H)), LALT(LGUI(KC_L)),  KC_LALT,  KC_LGUI,
 KC_SPACE, KC_LGUI,    MO(1),
 
 // Right Side
-LCTL(KC_SPACE),  KC_CIRC,  KC_AMPR,        KC_ASTR,        KC_TILD,    KC_PLUS,   KC_MINUS,
-KC_UNDS,         KC_Y,     KC_U,           KC_I,           KC_O,       KC_P,      KC_BSLASH,
-KC_H,            KC_J,     KC_K,           KC_L,           KC_SCOLON,  KC_QUOTE,
-KC_COLN,         KC_N,     KC_M,           KC_COMMA,       KC_DOT,     KC_SLASH,  KC_RSPC,
-KC_LBRC,         KC_RBRC,  KC_TRANSPARENT, KC_TRANSPARENT, MO(1),
+LCTL(KC_SPACE),  KC_CIRC,  KC_AMPR, KC_ASTR,  KC_TILD,        KC_PLUS,        KC_MINUS,
+KC_UNDS,         KC_Y,     KC_U,    KC_I,     KC_O,           KC_P,           KC_BSLASH,
+                 KC_H,     KC_J,    KC_K,     KC_L,           KC_SCOLON,      KC_QUOTE,
+KC_COLN,         KC_N,     KC_M,    KC_COMMA, KC_DOT,         KC_SLASH,       KC_RSPC,
+                           KC_LBRC, KC_RBRC,  KC_TRANSPARENT, KC_TRANSPARENT, MO(1),
 
 // Right Thumb Cluster
           LGUI(KC_LCBR), LGUI(KC_RCBR),
@@ -127,13 +127,55 @@ KC_TRANSPARENT, KC_TRANSPARENT, KC_1,           KC_2,        KC_3,           KC_
                                 KC_TRANSPARENT,
 KC_TRANSPARENT, KC_ENTER,       KC_BSPACE),
 
+/* Keymap 2: Movement Layer
+ *
+ *
+ * ,--------------------------------------------------.           ,--------------------------------------------------.
+ * |        |      |      |      |      |      |      |           |      |MouseL|MouseU|MouseD|MouseR|      |        |
+ * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
+ * |        |      |      |      |      |      |      |           |MouseU|      |      |      |      |      |        |
+ * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
+ * |        |      |      |      |      |      |------|           |------| Left |  Up  | Down | Right|      |        |
+ * |--------+------+------+------+------+------|      |           |MouseD|------+------+------+------+------+--------|
+ * |        |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
+ * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
+ *   |     |       |      |      |      |                                       |Vol D | Vol U| Mute |      |      |
+ *   `----------------------------------'                                       `----------------------------------'
+ *                                        ,-------------.       ,-------------.
+ *                                        |      |      |       |      |      |
+ *                                 ,------|------|------|       |------+--------+-----.
+ *                                 |      |      |      |       |      |       |      |
+ *                                 |Space |      |------|       |------| Enter |Bcksp |
+ *                                 |      |      |      |       |      |       |      |
+ *                                 `--------------------'       `---------------------'
+ */
+
   [LAYER_TWO] = LAYOUT_ergodox(
 
 // Left Side
-KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,LGUI(LSFT(KC_LBRACKET)),LGUI(LSFT(KC_RBRACKET)),KC_TRANSPARENT,
+KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+
+// Left Thumb Cluster
+          KC_TRANSPARENT, KC_TRANSPARENT,
+          KC_TRANSPARENT,
+KC_SPACE, KC_TRANSPARENT, KC_TRANSPARENT,
+
 // Right Side
 
-KC_TRANSPARENT,KC_MS_LEFT,KC_MS_DOWN,KC_MS_UP,KC_MS_RIGHT,KC_TRANSPARENT,KC_TRANSPARENT,LALT(KC_UP),KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,LCTL(KC_RBRACKET),KC_LEFT,KC_DOWN,KC_UP,KC_RIGHT,KC_TRANSPARENT,KC_TRANSPARENT,LALT(KC_DOWN),KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,KC_AUDIO_MUTE,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,RGUI(KC_LBRACKET),RGUI(KC_RBRACKET)),
+KC_TRANSPARENT, KC_WH_L,        KC_WH_D,           KC_WH_U,         KC_WH_R,        KC_TRANSPARENT,  KC_TRANSPARENT,
+KC_WH_U,        KC_TRANSPARENT, KC_TRANSPARENT,    KC_TRANSPARENT,  KC_TRANSPARENT, KC_TRANSPARENT,  KC_TRANSPARENT,
+                KC_LEFT,        KC_DOWN,           KC_UP,           KC_RIGHT,       KC_TRANSPARENT,  KC_TRANSPARENT,
+KC_WH_D,        KC_TRANSPARENT, KC_TRANSPARENT,    KC_TRANSPARENT,  KC_TRANSPARENT, KC_TRANSPARENT,  KC_TRANSPARENT,
+                                KC_AUDIO_VOL_DOWN, KC_AUDIO_VOL_UP, KC_AUDIO_MUTE,  KC_TRANSPARENT,  KC_TRANSPARENT,
+
+// Right Thumb Cluster
+KC_TRANSPARENT,KC_TRANSPARENT,
+KC_TRANSPARENT,
+KC_TRANSPARENT, KC_ENTER,       KC_BSPACE),
 
 };
 

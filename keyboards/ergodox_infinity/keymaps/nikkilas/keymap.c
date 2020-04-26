@@ -76,15 +76,56 @@ KC_LBRC,         KC_RBRC,  KC_TRANSPARENT, KC_TRANSPARENT, MO(1),
           KC_TRANSPARENT,
 KC_COMMA, KC_ENTER, KC_BSPACE),
 
+/* Keymap 1: Numpad Layer
+ *
+ *
+ * ,--------------------------------------------------.           ,--------------------------------------------------.
+ * |        |      |      |      |      |      |      |           |      |      |      |   /  |   *  |   -  |        |
+ * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
+ * |        |      |      |      |      |      |      |           |      |      |   7  |   8  |   9  |   +  |        |
+ * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
+ * |        |      |      |      |      |      |------|           |------|      |   4  |   5  |   6  |   +  |        |
+ * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
+ * |        |      |      |      |      |      |      |           |      |      |   1  |   2  |   3  |      |        |
+ * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
+ *   |     |       |      |      |      |                                       |   0  |   .  |   =  |      |      |
+ *   `----------------------------------'                                       `----------------------------------'
+ *                                        ,-------------.       ,-------------.
+ *                                        |      |      |       |      |      |
+ *                                 ,------|------|------|       |------+--------+-----.
+ *                                 |      |      |      |       |      |       |      |
+ *                                 |      |      |------|       |------| Enter |Bcksp |
+ *                                 |      |      |      |       |      |       |      |
+ *                                 `--------------------'       `---------------------'
+ */
 
 
   [LAYER_ONE] = LAYOUT_ergodox(
 
 // Left Side
-KC_ESCAPE,KC_F1,KC_F2,KC_F3,KC_F4,KC_F5,KC_TRANSPARENT,KC_TRANSPARENT,KC_EXLM,KC_AT,KC_LCBR,KC_RCBR,KC_PIPE,KC_TRANSPARENT,KC_TRANSPARENT,KC_HASH,KC_DLR,KC_LBRACKET,KC_RBRACKET,KC_GRAVE,KC_TRANSPARENT,KC_PERC,KC_CIRC,KC_LABK,KC_RABK,KC_TILD,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_SPACE,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,
+KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+                KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+                                KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+
+// Left Thumb Cluster
+          KC_TRANSPARENT, KC_TRANSPARENT,
+                          KC_TRANSPARENT,
+KC_SPACE, KC_TRANSPARENT, KC_TRANSPARENT,
+
 
 // Right Side
-KC_KP_PLUS,KC_KP_MINUS,KC_KP_ASTERISK,KC_KP_SLASH,KC_KP_ENTER,LCTL(KC_RBRACKET),KC_UP,KC_7,KC_8,KC_9,KC_TRANSPARENT,LCTL(KC_RBRACKET),KC_DOWN,KC_4,KC_5,KC_6,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_AMPR,KC_1,KC_2,KC_3,KC_TRANSPARENT,KC_TRANSPARENT,KC_0,KC_DOT,KC_EQUAL,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_ENTER,KC_BSPACE),
+KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_KP_SLASH, KC_KP_ASTERISK, KC_PMNS,        KC_TRANSPARENT,
+KC_TRANSPARENT, KC_TRANSPARENT, KC_7,           KC_8,        KC_9,           KC_PPLS,        KC_TRANSPARENT,
+                KC_TRANSPARENT, KC_4,           KC_5,        KC_6,           KC_PPLS,        KC_TRANSPARENT,
+KC_TRANSPARENT, KC_TRANSPARENT, KC_1,           KC_2,        KC_3,           KC_TRANSPARENT, KC_TRANSPARENT,
+                                KC_0,           KC_DOT,      KC_EQUAL,       KC_TRANSPARENT, KC_TRANSPARENT,
+
+// Right Thumb Cluster
+                KC_TRANSPARENT, KC_TRANSPARENT,
+                                KC_TRANSPARENT,
+KC_TRANSPARENT, KC_ENTER,       KC_BSPACE),
 
   [LAYER_TWO] = LAYOUT_ergodox(
 
